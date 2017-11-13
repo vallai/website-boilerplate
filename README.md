@@ -33,3 +33,7 @@ dbname=
 user=
 password=
 ```
+
+## Utilisation
+
+Rendez-vous à cette adresse : server_adress/website-boilerplate/web
