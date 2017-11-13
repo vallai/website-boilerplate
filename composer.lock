@@ -4,8 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9a30529cc3bfde0657f5e3fa08981f84",
-    "content-hash": "7b7a650b4132d5dfc05f2242c6a59701",
+    "content-hash": "04603b1de927ddd76d2850f5cb94d3b1",
     "packages": [
         {
             "name": "components/jquery",
@@ -47,7 +46,58 @@
             ],
             "description": "jQuery JavaScript Library",
             "homepage": "http://jquery.com",
-            "time": "2017-03-21 07:01:49"
+            "time": "2017-03-21T07:01:49+00:00"
+        },
+        {
+            "name": "csanquer/pdo-service-provider",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/csanquer/PdoServiceProvider.git",
+                "reference": "0c4dcc19adec45962ed6ea2b7efd67c164431000"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/csanquer/PdoServiceProvider/zipball/0c4dcc19adec45962ed6ea2b7efd67c164431000",
+                "reference": "0c4dcc19adec45962ed6ea2b7efd67c164431000",
+                "shasum": ""
+            },
+            "require": {
+                "silex/silex": "~1.3",
+                "symfony/options-resolver": "~2.7"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Csanquer\\Silex\\PdoServiceProvider\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Charles SANQUER",
+                    "email": "charles.sanquer@gmail.com"
+                }
+            ],
+            "description": "a PDO database service provider for silex",
+            "keywords": [
+                "database",
+                "pdo",
+                "service provider",
+                "silex"
+            ],
+            "time": "2015-10-06T13:48:42+00:00"
         },
         {
             "name": "pimple/pimple",
@@ -93,7 +143,7 @@
                 "container",
                 "dependency injection"
             ],
-            "time": "2013-11-22 08:30:29"
+            "time": "2013-11-22T08:30:29+00:00"
         },
         {
             "name": "psr/log",
@@ -140,7 +190,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10 12:19:37"
+            "time": "2016-10-10T12:19:37+00:00"
         },
         {
             "name": "silex/silex",
@@ -217,24 +267,24 @@
             "keywords": [
                 "microframework"
             ],
-            "time": "2017-04-30 16:26:54"
+            "time": "2017-04-30T16:26:54+00:00"
         },
         {
             "name": "symfony/debug",
-            "version": "v3.3.6",
+            "version": "v3.3.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "7c13ae8ce1e2adbbd574fc39de7be498e1284e13"
+                "reference": "74557880e2846b5c84029faa96b834da37e29810"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/7c13ae8ce1e2adbbd574fc39de7be498e1284e13",
-                "reference": "7c13ae8ce1e2adbbd574fc39de7be498e1284e13",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/74557880e2846b5c84029faa96b834da37e29810",
+                "reference": "74557880e2846b5c84029faa96b834da37e29810",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.9",
+                "php": "^5.5.9|>=7.0.8",
                 "psr/log": "~1.0"
             },
             "conflict": {
@@ -273,7 +323,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-07-28 15:27:31"
+            "time": "2017-11-10T16:38:39+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -333,7 +383,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2016-07-19 10:44:15"
+            "time": "2016-07-19T10:44:15+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -386,7 +436,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2016-07-17 13:54:30"
+            "time": "2016-07-17T13:54:30+00:00"
         },
         {
             "name": "symfony/http-kernel",
@@ -468,20 +518,74 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
-            "time": "2016-07-30 09:10:37"
+            "time": "2016-07-30T09:10:37+00:00"
         },
         {
-            "name": "symfony/polyfill-mbstring",
-            "version": "v1.4.0",
+            "name": "symfony/options-resolver",
+            "version": "v2.8.29",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "f29dca382a6485c3cbe6379f0c61230167681937"
+                "url": "https://github.com/symfony/options-resolver.git",
+                "reference": "e4e64cb8e01981425098bfb6000ac397206dfc25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/f29dca382a6485c3cbe6379f0c61230167681937",
-                "reference": "f29dca382a6485c3cbe6379f0c61230167681937",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/e4e64cb8e01981425098bfb6000ac397206dfc25",
+                "reference": "e4e64cb8e01981425098bfb6000ac397206dfc25",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\OptionsResolver\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony OptionsResolver Component",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "config",
+                "configuration",
+                "options"
+            ],
+            "time": "2017-11-05T15:25:56+00:00"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296",
+                "reference": "2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296",
                 "shasum": ""
             },
             "require": {
@@ -493,7 +597,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4-dev"
+                    "dev-master": "1.6-dev"
                 }
             },
             "autoload": {
@@ -527,7 +631,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-06-09 14:24:12"
+            "time": "2017-10-11T12:05:26+00:00"
         },
         {
             "name": "symfony/routing",
@@ -602,7 +706,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2016-06-29 05:40:00"
+            "time": "2016-06-29T05:40:00+00:00"
         },
         {
             "name": "twig/extensions",
@@ -658,20 +762,20 @@
                 "i18n",
                 "text"
             ],
-            "time": "2017-06-08 18:19:53"
+            "time": "2017-06-08T18:19:53+00:00"
         },
         {
             "name": "twig/twig",
-            "version": "v1.34.4",
+            "version": "v1.35.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "f878bab48edb66ad9c6ed626bf817f60c6c096ee"
+                "reference": "daa657073e55b0a78cce8fdd22682fddecc6385f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/f878bab48edb66ad9c6ed626bf817f60c6c096ee",
-                "reference": "f878bab48edb66ad9c6ed626bf817f60c6c096ee",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/daa657073e55b0a78cce8fdd22682fddecc6385f",
+                "reference": "daa657073e55b0a78cce8fdd22682fddecc6385f",
                 "shasum": ""
             },
             "require": {
@@ -685,7 +789,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.34-dev"
+                    "dev-master": "1.35-dev"
                 }
             },
             "autoload": {
@@ -723,7 +827,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2017-07-04 13:19:31"
+            "time": "2017-09-27T18:06:46+00:00"
         }
     ],
     "packages-dev": [],
