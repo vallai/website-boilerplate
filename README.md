@@ -19,7 +19,7 @@ PdoServiceProvider (https://github.com/csanquer/PdoServiceProvider) pour la conn
 2. Installer les dépendances avec composer (https://getcomposer.org/download/)
 
 ```
-$ composer install
+$ composer install -o
 ```
 
 3. Connexion à une base de données
