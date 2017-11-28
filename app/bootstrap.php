@@ -2,11 +2,15 @@
 
 use Csanquer\Silex\PdoServiceProvider\Provider\PDOServiceProvider;
 use Silex\Application;
+use Silex\Provider\UrlGeneratorServiceProvider;
 
 $app = new Application();
 
 // Activation du mode debug
 $app['debug'] = true;
+
+// Sessions
+$app->register(new Silex\Provider\SessionServiceProvider());
 
 // Routes
 $app->mount('/', include BASE_DIRECTORY_PROJECT . '/app/config/routes.php');
@@ -20,13 +24,18 @@ $app->register(new Silex\Provider\TwigServiceProvider(), [
     ]
 ]);
 
+// Function to generate URLs with TWIG
+$app->register(new UrlGeneratorServiceProvider());
+$app['twig']->addFunction(new \Twig_SimpleFunction('path', function($url) use ($app) {
+    return $app['url_generator']->generate($url);
+}));
+
 // Connexion pour bdd
 $app->register(
     new PDOServiceProvider('pdo'), array(
+    	// Récupération des informations de connexion à la bdd
     	'pdo.server' => parse_ini_file('config/db.ini')
 	)
 );
-
-// $pdo = $app['pdo'];
 
 return $app;
