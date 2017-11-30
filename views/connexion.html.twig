@@ -1,0 +1,13 @@
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+	<h1>Connexion</h1>
+	<form action="login_check" method="post">
+        <p><label for="username">Nom d'utilisateur : </label><input id="username" type="text" name="_username" value="{{ last_username }}"></p>
+        <p><label for="password">Mot de passe : </label><input id="password" type="password" name="_password"></p>
+        <p><input type="submit" value="Connexion"></p>
+        {% if error %}
+            <div class="error">{{ error }}</div>
+        {% endif %}
+    </form>
+{% endblock %}

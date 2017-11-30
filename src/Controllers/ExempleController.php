@@ -6,12 +6,16 @@ use \Silex\Application;
 
 class ExempleController {
 
-	public function exemple(Application $app) {
-		return $app['twig']->render('exemple.html.twig');
+	public function accueil(Application $app) {
+		return $app['twig']->render('accueil.html.twig');
 	}
-
-	public function test(Application $app) {
-	    return $app['twig']->render('test.html.twig');
-    }
-
+	
+	public function user(Application $app) {
+		echo "Page accessible uniquement avec le ROLE_USER";exit;
+	}
+	
+	public function admin(Application $app) {
+		echo "Page accessible uniquement avec le ROLE_ADMIN";exit;
+	}
+	
 }

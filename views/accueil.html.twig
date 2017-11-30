@@ -1,0 +1,25 @@
+{# exemple.html.twig #}
+
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+	{% if app.user %}
+		<p>Connecté en tant que {{ app.user.username }} !</p>
+		<p>Tu possèdes les rôles : </p>
+		{% for role in app.user.roles %}
+			{{ role }}<br/>
+		{% endfor %}
+		<p><a href="{{ path('deconnexion') }}">Déconnexion</a></p>
+	{% else %}
+		Non connecté
+	{% endif %}
+	
+	<p>
+		Page accessible pour les rôles USER : <a href="{{ path('user') }}">{{ path('user') }}</a>
+		{% if not is_granted('ROLE_USER') %}(Tu n'as pas les droits){% endif %}
+	</p>
+	<p>
+		Page accessible pour les rôles ADMIN : <a href="{{ path('admin') }}">{{ path('admin') }}</a>
+		{% if not is_granted('ROLE_ADMIN') %}(Tu n'as pas les droits){% endif %}
+	</p>
+{% endblock %}

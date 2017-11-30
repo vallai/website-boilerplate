@@ -4,7 +4,9 @@
 		"twig/twig": "~1.0",
 		"twig/extensions": "~1.2",
 		"components/jquery": "3.2.*",
-		"csanquer/pdo-service-provider": "~1.0"
+		"csanquer/pdo-service-provider": "~1.0",
+		"symfony/twig-bridge": "^3.3",
+        "symfony/security": "~2.8"
 	},
 	"autoload": {
 		"psr-4": {
